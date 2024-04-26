@@ -3,10 +3,12 @@
 
 The body of your message.
 
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
+Email:{{$data['email']}}
+<br>
+Name:{{$data['name']}}
+<br>
+Message:{{$data['message']}}
 
 Thanks,<br>
-{{ config('app.name') }}
+
 </x-mail::message>

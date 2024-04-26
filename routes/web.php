@@ -8,7 +8,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/shop', [productcon::class, 'shop']);
+Route::any('/shop', [productcon::class, 'shop']);
+Route::get('/search{data=?}', [productcon::class, 'search']);
 Route::get('/about', [productcon::class, 'About']);
 Route::get('/contact', [productcon::class, 'Contact']);
 Route::get('/Thanks', [productcon::class,'Thankspage']);
